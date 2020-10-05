@@ -1,0 +1,176 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        ZStack {
+            Group{
+                Path { (path) in
+                    path.move(to: CGPoint(x: 260, y: 254))
+                    path.addQuadCurve(to: CGPoint(x: 330, y: 240), control: CGPoint(x: 275, y: 290))
+                    path.addQuadCurve(to: CGPoint(x: 265, y: 140), control: CGPoint(x: 340, y: 220))
+                    path.addQuadCurve(to: CGPoint(x: 135, y: 140), control: CGPoint(x: 200, y: 80))
+                    path.addQuadCurve(to: CGPoint(x: 70, y: 240), control: CGPoint(x: 60, y: 220))
+                    path.addQuadCurve(to: CGPoint(x: 142, y: 254), control: CGPoint(x: 118, y: 290))
+                    path.closeSubpath()
+                }
+                .fill(Color.yellow)
+                Path { (path) in
+                    path.addArc(center: CGPoint(x: 200, y: 200), radius: 80, startAngle: .degrees(320), endAngle: .degrees(220), clockwise: false)
+                    path.move(to: CGPoint(x: 139, y: 149))
+                    path.addQuadCurve(to: CGPoint(x: 261, y: 149), control: CGPoint(x: 200, y: 125))
+                    path.closeSubpath()
+                    
+                    path.move(to: CGPoint(x: 180, y: 437))
+                    path.addLine(to: CGPoint(x: 180, y: 530))
+                    path.addQuadCurve(to: CGPoint(x: 180, y: 550), control: CGPoint(x: 160, y: 548))
+                    path.addLine(to: CGPoint(x: 200, y: 550))
+                    path.addLine(to: CGPoint(x: 200, y: 440))
+                    path.addLine(to: CGPoint(x: 200, y: 550))
+                    path.addLine(to: CGPoint(x: 220, y: 550))
+                    path.addQuadCurve(to: CGPoint(x: 220, y: 530), control: CGPoint(x: 240, y: 548))
+                    path.addLine(to: CGPoint(x: 220, y: 437))
+                    
+                    path.move(to: CGPoint(x: 175, y: 276))
+                    path.addLine(to: CGPoint(x: 112, y: 320))
+                    path.addQuadCurve(to: CGPoint(x: 50, y: 325), control: CGPoint(x: 99, y: 325))
+                    path.addQuadCurve(to: CGPoint(x: 45, y: 325), control: CGPoint(x: 48, y: 315))
+                    path.addQuadCurve(to: CGPoint(x: 45, y: 340), control: CGPoint(x: 30, y: 332))
+                    path.addQuadCurve(to: CGPoint(x: 115, y: 335), control: CGPoint(x: 55, y: 345))
+                    path.addLine(to: CGPoint(x: 165, y: 300))
+                    path.addQuadCurve(to: CGPoint(x: 150, y: 420), control: CGPoint(x: 130, y: 400))
+                    path.addQuadCurve(to: CGPoint(x: 250, y: 420), control: CGPoint(x: 200, y: 460))
+                    path.addQuadCurve(to: CGPoint(x: 235, y: 300), control: CGPoint(x: 275, y: 400))
+                    path.addQuadCurve(to: CGPoint(x: 295, y: 335), control: CGPoint(x: 275, y: 320))
+                    path.addQuadCurve(to: CGPoint(x: 265, y: 360), control: CGPoint(x: 280, y: 360))
+                    path.addQuadCurve(to: CGPoint(x: 270, y: 375), control: CGPoint(x: 250, y: 375))
+                    path.addQuadCurve(to: CGPoint(x: 315, y: 330), control: CGPoint(x: 285, y: 375))
+                    path.addQuadCurve(to: CGPoint(x: 225, y: 276), control: CGPoint(x: 275, y: 305))
+                }
+                .fill(Color.green)
+                Path { (path) in
+                    path.move(to: CGPoint(x: 152, y: 265))
+                    path.addQuadCurve(to: CGPoint(x: 248, y: 265), control: CGPoint(x: 200, y: 250))
+                    path.addQuadCurve(to: CGPoint(x: 152, y: 265), control: CGPoint(x: 200, y: 295))
+                    
+                    path.move(to: CGPoint(x: 185, y: 279))
+                    path.addQuadCurve(to: CGPoint(x: 175, y: 420), control: CGPoint(x: 140, y: 400))
+                    path.addQuadCurve(to: CGPoint(x: 225, y: 420), control: CGPoint(x: 200, y: 435))
+                    path.addQuadCurve(to: CGPoint(x: 215, y: 279), control: CGPoint(x: 260, y: 400))
+                }
+                .fill(Color.white)
+                Path { (path) in
+                    path.move(to: CGPoint(x: 200, y: 112))
+                    path.addLine(to: CGPoint(x: 196, y: 120))
+                    path.addLine(to: CGPoint(x: 187, y: 120))
+                    path.addLine(to: CGPoint(x: 194, y: 125))
+                    path.addLine(to: CGPoint(x: 192, y: 133))
+                    path.addLine(to: CGPoint(x: 200, y: 129))
+                    path.addLine(to: CGPoint(x: 208, y: 133))
+                    path.addLine(to: CGPoint(x: 206, y: 125))
+                    path.addLine(to: CGPoint(x: 212, y: 120))
+                    path.addLine(to: CGPoint(x: 204, y: 120))
+                    path.closeSubpath()
+                    
+                    path.move(to: CGPoint(x: 180, y: 259))
+                    path.addQuadCurve(to: CGPoint(x: 220, y: 259), control: CGPoint(x: 200, y: 290))
+                    path.addQuadCurve(to: CGPoint(x: 180, y: 259), control: CGPoint(x: 200, y: 255))
+                }
+                .fill(Color.red)
+                Path { (path) in
+                    path.move(to: CGPoint(x: 200, y: 335))
+                    path.addLine(to: CGPoint(x: 190, y: 360))
+                    path.addLine(to: CGPoint(x: 165, y: 360))
+                    path.addLine(to: CGPoint(x: 185, y: 375))
+                    path.addLine(to: CGPoint(x: 175, y: 400))
+                    path.addLine(to: CGPoint(x: 200, y: 385))
+                    path.addLine(to: CGPoint(x: 225, y: 400))
+                    path.addLine(to: CGPoint(x: 215, y: 375))
+                    path.addLine(to: CGPoint(x: 235, y: 360))
+                    path.addLine(to: CGPoint(x: 210, y: 360))
+                    path.closeSubpath()
+                }
+                .fill(Color.yellow)
+                Circle()
+                    .stroke()
+                    .frame(width: 60, height: 60)
+                    .position(x: 158, y: 176)
+                Circle()
+                    .stroke()
+                    .frame(width: 60, height: 60)
+                    .position(x: 242, y: 176)
+            }
+            Group{
+                Path { (path) in
+                    path.addArc(center: CGPoint(x: 200, y: 200), radius: 80, startAngle: .degrees(320), endAngle: .degrees(220), clockwise: false)
+                    
+                    path.move(to: CGPoint(x: 139, y: 149))
+                    path.addQuadCurve(to: CGPoint(x: 261, y: 149), control: CGPoint(x: 200, y: 125))
+                    
+                    path.move(to: CGPoint(x: 260, y: 254))
+                    path.addQuadCurve(to: CGPoint(x: 330, y: 240), control: CGPoint(x: 275, y: 290))
+                    path.addQuadCurve(to: CGPoint(x: 265, y: 140), control: CGPoint(x: 340, y: 220))
+                    path.addQuadCurve(to: CGPoint(x: 135, y: 140), control: CGPoint(x: 200, y: 80))
+                    path.addQuadCurve(to: CGPoint(x: 70, y: 240), control: CGPoint(x: 60, y: 220))
+                    path.addQuadCurve(to: CGPoint(x: 142, y: 254), control: CGPoint(x: 118, y: 290))
+                    
+                    path.move(to: CGPoint(x: 180, y: 437))
+                    path.addLine(to: CGPoint(x: 180, y: 530))
+                    path.addQuadCurve(to: CGPoint(x: 180, y: 550), control: CGPoint(x: 160, y: 548))
+                    path.addLine(to: CGPoint(x: 200, y: 550))
+                    path.addLine(to: CGPoint(x: 200, y: 440))
+                    path.addLine(to: CGPoint(x: 200, y: 550))
+                    path.addLine(to: CGPoint(x: 220, y: 550))
+                    path.addQuadCurve(to: CGPoint(x: 220, y: 530), control: CGPoint(x: 240, y: 548))
+                    path.addLine(to: CGPoint(x: 220, y: 437))
+                    
+                    path.move(to: CGPoint(x: 175, y: 276))
+                    path.addLine(to: CGPoint(x: 112, y: 320))
+                    path.addQuadCurve(to: CGPoint(x: 50, y: 325), control: CGPoint(x: 99, y: 325))
+                    path.addQuadCurve(to: CGPoint(x: 45, y: 325), control: CGPoint(x: 48, y: 315))
+                    path.addQuadCurve(to: CGPoint(x: 45, y: 340), control: CGPoint(x: 30, y: 332))
+                    path.addQuadCurve(to: CGPoint(x: 115, y: 335), control: CGPoint(x: 55, y: 345))
+                    path.addLine(to: CGPoint(x: 165, y: 300))
+                    path.addQuadCurve(to: CGPoint(x: 150, y: 420), control: CGPoint(x: 130, y: 400))
+                    path.addQuadCurve(to: CGPoint(x: 250, y: 420), control: CGPoint(x: 200, y: 460))
+                    path.addQuadCurve(to: CGPoint(x: 235, y: 300), control: CGPoint(x: 275, y: 400))
+                    path.addQuadCurve(to: CGPoint(x: 295, y: 335), control: CGPoint(x: 275, y: 320))
+                    path.addQuadCurve(to: CGPoint(x: 265, y: 360), control: CGPoint(x: 280, y: 360))
+                    path.addQuadCurve(to: CGPoint(x: 270, y: 375), control: CGPoint(x: 250, y: 375))
+                    path.addQuadCurve(to: CGPoint(x: 315, y: 330), control: CGPoint(x: 285, y: 375))
+                    path.addQuadCurve(to: CGPoint(x: 225, y: 276), control: CGPoint(x: 275, y: 305))
+                    
+                    path.move(to: CGPoint(x: 152, y: 265))
+                    path.addQuadCurve(to: CGPoint(x: 248, y: 265), control: CGPoint(x: 200, y: 250))
+                    path.addQuadCurve(to: CGPoint(x: 152, y: 265), control: CGPoint(x: 200, y: 295))
+                    
+                    path.move(to: CGPoint(x: 185, y: 279))
+                    path.addQuadCurve(to: CGPoint(x: 175, y: 420), control: CGPoint(x: 140, y: 400))
+                    path.addQuadCurve(to: CGPoint(x: 225, y: 420), control: CGPoint(x: 200, y: 435))
+                    path.addQuadCurve(to: CGPoint(x: 215, y: 279), control: CGPoint(x: 260, y: 400))
+                }
+                .stroke()
+                Circle()
+                    .fill(Color.white)
+                    .frame(width: 60, height: 60)
+                    .position(x: 158, y: 176)
+                Circle()
+                    .fill(Color.white)
+                    .frame(width: 60, height: 60)
+                    .position(x: 242, y: 176)
+                Circle()
+                    .frame(width: 35, height: 35)
+                    .position(x: 157, y: 175)
+                Circle()
+                    .frame(width: 35, height: 35)
+                    .position(x: 243, y: 175)
+                
+            }
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
